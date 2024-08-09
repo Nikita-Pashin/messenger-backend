@@ -7,8 +7,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  // controllers: [AppController],
   imports: [DialogsModule, UserModule, AuthModule, MessagesModule],
-  // exports: [AppService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
