@@ -16,7 +16,7 @@ export class UserController {
   @UseGuards(AuthGuard)
   @Get()
   findAll() {
-    return this.userService.findAll();
+    return 'lol';
   }
 
   @Get(':id')
